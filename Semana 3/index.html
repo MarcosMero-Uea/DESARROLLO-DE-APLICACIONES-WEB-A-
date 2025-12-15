@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana 3 - HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Práctica Semana 3 - HTML5 Semántico</h1>
+        <p>
+            Esta página web demuestra el uso correcto de 
+            <strong>etiquetas semánticas</strong> y la 
+            <em>organización profesional</em> del contenido.
+        </p>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN INTRODUCCIÓN -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>
+                En esta actividad se aplica el uso de HTML5 para estructurar una página web,
+                utilizando etiquetas como <strong>header</strong>, <strong>nav</strong>,
+                <strong>main</strong>, <strong>section</strong> y <strong>footer</strong>.
+            </p>
+
+            <h3>Objetivo</h3>
+            <p>
+                El objetivo principal es comprender la estructura básica de un documento web
+                y la correcta organización del contenido.
+            </p>
+        </section>
+
+        <!-- SECCIÓN MULTIMEDIA -->
+        <section id="multimedia">
+  <h2>Contenido Multimedia</h2>
+
+  <article>
+    <h3>Imagen</h3>
+    <img src="media/img1.jpg" alt="Imagen de la Semana 3" width="500">
+  </article>
+
+  <article>
+    <h3>Video (YouTube)</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/EvKm8yhM7V8"
+      title="Video de YouTube"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </article>
+</section>
+
+
+        <!-- SECCIÓN LISTAS -->
+        <section id="listas">
+            <h2>Listas</h2>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Crear estructura del proyecto</li>
+                <li>Escribir código HTML</li>
+                <li>Aplicar estilos CSS</li>
+            </ol>
+
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN TABLA -->
+        <section id="tabla">
+            <h2>Tabla de ejemplo</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Función</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Encabezado de la página</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Menú de navegación</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Pie de página</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN FORMULARIO -->
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+
+            <form>
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" required><br><br>
+
+                <label>Correo:</label><br>
+                <input type="email" name="correo" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2025 - Práctica Semana 3 | Desarrollo de Aplicaciones Web</p>
+    </footer>
+
+</body>
+</html>
