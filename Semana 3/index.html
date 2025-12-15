@@ -1,146 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Semana 3 - HTML5</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Práctica Semana 3 - HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header>
-        <h1>Práctica Semana 3 - HTML5 Semántico</h1>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Práctica Semana 3 – HTML5 y Estructura Semántica</h1>
+
+    <p>
+      <strong>Nombre del estudiante:</strong> Marcos Mero<br>
+      <strong>Asignatura:</strong> Desarrollo de Aplicaciones Web<br>
+      <strong>Carrera:</strong> Tecnologías de la Información<br>
+      <strong>Universidad:</strong> UEA
+    </p>
+
+    <p>
+      En esta práctica se desarrolla una página web básica utilizando
+      <strong>HTML5</strong>, aplicando etiquetas semánticas y una correcta
+      organización del contenido, conforme a los lineamientos revisados en la
+      Semana 3 de la asignatura.
+    </p>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="#introduccion">Introducción</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#tabla">Tabla</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- INTRODUCCIÓN -->
+    <section id="introduccion">
+      <h2>Introducción</h2>
+
+      <p>
+        El desarrollo de aplicaciones web requiere una estructura clara y bien
+        organizada que facilite tanto la comprensión del contenido como su
+        mantenimiento. HTML5 incorpora etiquetas semánticas que permiten definir
+        de forma precisa las diferentes partes de una página web, mejorando la
+        accesibilidad y la experiencia del usuario.
+      </p>
+
+      <p>
+        En esta actividad correspondiente a la <strong>Semana 3</strong>, se pone
+        en práctica el uso de dichas etiquetas, junto con elementos multimedia,
+        listas, tablas y formularios, demostrando una correcta organización del
+        documento web.
+      </p>
+
+      <h3>Objetivo de la práctica</h3>
+
+      <p>
+        Aplicar los conceptos básicos de HTML5 mediante el diseño de una página
+        web estructurada, haciendo uso de etiquetas semánticas, estilos con CSS y
+        recursos multimedia.
+      </p>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section id="multimedia">
+      <h2>Contenido multimedia</h2>
+
+      <article>
+        <h3>Imagen representativa</h3>
         <p>
-            Esta página web demuestra el uso correcto de 
-            <strong>etiquetas semánticas</strong> y la 
-            <em>organización profesional</em> del contenido.
+          La siguiente imagen se encuentra almacenada dentro del repositorio del
+          proyecto y permite demostrar el uso correcto del elemento
+          <strong>&lt;img&gt;</strong> junto con el atributo <em>alt</em>.
         </p>
-    </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#multimedia">Multimedia</a></li>
-            <li><a href="#listas">Listas</a></li>
-            <li><a href="#tabla">Tabla</a></li>
-            <li><a href="#formulario">Formulario</a></li>
-        </ul>
-    </nav>
+        <img src="media/img1.jpg" alt="Imagen utilizada en la práctica de la Semana 3">
+      </article>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
+      <article>
+        <h3>Video explicativo</h3>
+        <p>
+          A continuación se presenta un video integrado desde la plataforma
+          YouTube, según la indicación del docente, como recurso de apoyo al
+          contenido revisado en clase.
+        </p>
 
-        <!-- SECCIÓN INTRODUCCIÓN -->
-        <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>
-                En esta actividad se aplica el uso de HTML5 para estructurar una página web,
-                utilizando etiquetas como <strong>header</strong>, <strong>nav</strong>,
-                <strong>main</strong>, <strong>section</strong> y <strong>footer</strong>.
-            </p>
+        <iframe
+          src="https://www.youtube.com/embed/EvKm8yhM7V8"
+          title="Video de apoyo - Desarrollo Web"
+          allowfullscreen>
+        </iframe>
 
-            <h3>Objetivo</h3>
-            <p>
-                El objetivo principal es comprender la estructura básica de un documento web
-                y la correcta organización del contenido.
-            </p>
-        </section>
+        <p class="nota">
+          <em>Nota:</em> El video se integra mediante YouTube conforme a la
+          indicación del docente.
+        </p>
+      </article>
+    </section>
 
-        <!-- SECCIÓN MULTIMEDIA -->
-        <section id="multimedia">
-  <h2>Contenido Multimedia</h2>
+    <!-- LISTAS -->
+    <section id="listas">
+      <h2>Uso de listas en HTML</h2>
 
-  <article>
-    <h3>Imagen</h3>
-    <img src="media/img1.jpg" alt="Imagen de la Semana 3" width="500">
-  </article>
+      <p>
+        Las listas permiten organizar información de manera clara y estructurada.
+        En HTML existen listas ordenadas y desordenadas, las cuales se utilizan
+        según el tipo de información que se desea presentar.
+      </p>
 
-  <article>
-    <h3>Video (YouTube)</h3>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/EvKm8yhM7V8"
-      title="Video de YouTube"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </article>
-</section>
+      <h3>Pasos realizados en la práctica</h3>
+      <ol>
+        <li>Creación de la estructura del proyecto.</li>
+        <li>Desarrollo del archivo HTML con etiquetas semánticas.</li>
+        <li>Aplicación de estilos básicos mediante CSS.</li>
+      </ol>
 
+      <h3>Tecnologías utilizadas</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
 
-        <!-- SECCIÓN LISTAS -->
-        <section id="listas">
-            <h2>Listas</h2>
+    <!-- TABLA -->
+    <section id="tabla">
+      <h2>Tabla de etiquetas semánticas</h2>
 
-            <h3>Lista ordenada</h3>
-            <ol>
-                <li>Crear estructura del proyecto</li>
-                <li>Escribir código HTML</li>
-                <li>Aplicar estilos CSS</li>
-            </ol>
+      <p>
+        En la siguiente tabla se describen algunas de las principales etiquetas
+        semánticas utilizadas en HTML5 y su función dentro de una página web.
+      </p>
 
-            <h3>Lista desordenada</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>GitHub</li>
-            </ul>
-        </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Etiqueta</th>
+            <th>Función</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Define el encabezado de la página o sección.</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Agrupa los enlaces de navegación.</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Representa el pie de página.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <!-- SECCIÓN TABLA -->
-        <section id="tabla">
-            <h2>Tabla de ejemplo</h2>
+    <!-- FORMULARIO -->
+    <section id="formulario">
+      <h2>Formulario de contacto</h2>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Etiqueta</th>
-                        <th>Función</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>&lt;header&gt;</td>
-                        <td>Encabezado de la página</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;nav&gt;</td>
-                        <td>Menú de navegación</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;footer&gt;</td>
-                        <td>Pie de página</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <p>
+        El siguiente formulario simula un formulario básico de contacto, con
+        campos comunes utilizados en aplicaciones web.
+      </p>
 
-        <!-- SECCIÓN FORMULARIO -->
-        <section id="formulario">
-            <h2>Formulario de contacto</h2>
+      <form>
+        <label>Nombre:</label>
+        <input type="text" required>
 
-            <form>
-                <label>Nombre:</label><br>
-                <input type="text" name="nombre" required><br><br>
+        <label>Correo electrónico:</label>
+        <input type="email" required>
 
-                <label>Correo:</label><br>
-                <input type="email" name="correo" required><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+  </main>
 
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>© 2025 - Práctica Semana 3 | Desarrollo de Aplicaciones Web</p>
-    </footer>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>
+      Práctica académica – Semana 3<br>
+      Desarrollo de Aplicaciones Web – UEA<br>
+      Elaborado por: <strong>Marcos Mero</strong>
+    </p>
+  </footer>
 
 </body>
 </html>
+
