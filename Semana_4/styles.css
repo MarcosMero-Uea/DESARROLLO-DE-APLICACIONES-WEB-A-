@@ -1,0 +1,158 @@
+/* =========================================================
+   Semana_4 - CSS personalizado (Bootstrap 5 + CSS3 avanzado)
+   Tema: La IA y el impacto en la sociedad
+   ========================================================= */
+
+/* Variables (útil para mantener coherencia de color) */
+:root {
+  --brand: #0ea5e9;        /* azul tecnológico */
+  --brand-dark: #0284c7;   /* azul más profundo */
+  --ink: #0f172a;          /* texto oscuro */
+  --muted: #64748b;        /* texto secundario */
+  --soft: #f1f5f9;         /* fondo claro */
+}
+
+/* Base */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+/* Ajustes generales */
+h1, h2, h3 {
+  letter-spacing: 0.2px;
+}
+
+p {
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   Sobrescribir Bootstrap
+   ========================================================= */
+.bg-primary {
+  /* Cambiamos el "primary" a un tono tecnológico */
+  background-color: var(--brand) !important;
+}
+
+/* Botón principal con transición y transform */
+.btn-primary {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+  border-radius: 14px; /* borde redondeado */
+  padding: 10px 16px;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-dark) !important;
+  border-color: var(--brand-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(2, 132, 199, 0.25);
+}
+
+/* Botón claro del header */
+header .btn-light {
+  border-radius: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+header .btn-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================================================
+   Cards: sombra, bordes, animación hover
+   ========================================================= */
+.card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card.shadow {
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10) !important;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16) !important;
+}
+
+/* Imagen dentro de las cards con leve zoom al hover (CSS3) */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   Navbar: ajuste visual leve
+   ========================================================= */
+.navbar {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--brand) !important;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   Sección Reflexión: caja destacada
+   ========================================================= */
+#formulario .bg-white {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Footer */
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--brand);
+}
+
+/* =========================================================
+   Media query propia (pantallas pequeñas)
+   Requisito: cambiar colores en pantallas pequeñas
+   ========================================================= */
+@media (max-width: 576px) {
+  /* Cambia el fondo del header en móvil para diferenciar */
+  header.bg-primary {
+    background-color: #0b1220 !important; /* oscuro */
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p.lead {
+    font-size: 1rem;
+    opacity: 0.95;
+  }
+
+  /* Botones más amplios y cómodos en móvil */
+  .btn-primary,
+  header .btn-light {
+    border-radius: 16px;
+    padding: 12px 16px;
+  }
+}
