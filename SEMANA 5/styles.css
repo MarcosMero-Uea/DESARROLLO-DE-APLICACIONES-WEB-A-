@@ -1,0 +1,23 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#galeria{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#galeria img{
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+#galeria img.seleccionada{
+  border: 3px solid blue;
+}
