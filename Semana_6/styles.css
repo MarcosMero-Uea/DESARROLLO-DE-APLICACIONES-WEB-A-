@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  h6 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+}
+
+form {
+  background: #fff;
+  width: 360px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input {
+  width: 96%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.error {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.valido {
+  border: 2px solid green;
+}
+
+.invalido {
+  border: 2px solid red;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnEnviar {
+  background: #111;
+  color: #fff;
+}
+
+#btnEnviar:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+#btnReset {
+  background: #e0e0e0;
+}
+
+#mensajeExito {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  min-height: 18px;
+}
