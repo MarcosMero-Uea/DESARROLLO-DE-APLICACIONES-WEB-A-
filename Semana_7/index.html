@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista Dinámica de Productos</title>
+</head>
+<body>
+
+  <h1>Lista de Productos</h1>
+
+  <!-- Formulario simple (clase pasada: validación + DOM) -->
+  <div>
+    <label>
+      Nombre:
+      <input type="text" id="nombre" />
+    </label>
+    <small id="errNombre"></small>
+    <br><br>
+
+    <label>
+      Precio:
+      <input type="number" id="precio" />
+    </label>
+    <small id="errPrecio"></small>
+    <br><br>
+
+    <label>
+      Descripción:
+      <input type="text" id="descripcion" />
+    </label>
+    <small id="errDesc"></small>
+    <br><br>
+
+    <button id="btnAgregar" type="button">Agregar Producto</button>
+  </div>
+
+  <hr>
+
+  <!-- Requisito: lista en <ul> -->
+  <ul id="listaProductos"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
