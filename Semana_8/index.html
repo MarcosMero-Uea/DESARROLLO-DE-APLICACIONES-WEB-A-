@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 8 - Bootstrap y JS</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO + NAVBAR -->
+  <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+      <a class="navbar-brand fw-semibold" href="#">Mi Página</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <main class="container my-4" id="inicio">
+    <h1 class="mb-4 text-center">Página Web Interactiva con Bootstrap y JavaScript</h1>
+    <h6 class="mb-4 text-center">Marcos Mero Lucas</h6>
+
+    <!-- CARRUSEL -->
+    <section class="mb-5">
+      <h2 class="h4 mb-3">Carrusel</h2>
+
+      <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/1200/450?random=1" class="d-block w-100" alt="Imagen 1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1200/450?random=2" class="d-block w-100" alt="Imagen 2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1200/450?random=3" class="d-block w-100" alt="Imagen 3">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TABLA DE PRODUCTOS -->
+    <section class="mb-5" id="productos">
+      <h2 class="h4 mb-3">Tabla de Productos</h2>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Producto</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Audífonos</td>
+              <td>Electrónica</td>
+              <td>$25</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Agenda</td>
+              <td>Oficina</td>
+              <td>$8</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Botella</td>
+              <td>Hogar</td>
+              <td>$10</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BOTÓN DE ALERTA -->
+      <button id="btnAlerta" class="btn btn-primary mt-2">Mostrar alerta</button>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="mb-5" id="contacto">
+      <h2 class="h4 mb-3">Formulario de Contacto</h2>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form id="formContacto" novalidate>
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+              <small id="errorNombre" class="text-danger d-none">El nombre es obligatorio.</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico *</label>
+              <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com">
+              <small id="errorCorreo" class="text-danger d-none">Ingresa un correo válido.</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje *</label>
+              <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+              <small id="errorMensaje" class="text-danger d-none">El mensaje es obligatorio.</small>
+            </div>
+
+            <button type="submit" class="btn btn-success">Enviar</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">Contacto: info@ejemplo.com</p>
+      <p class="mb-0">
+        <a class="text-white me-3" href="#">Facebook</a>
+        <a class="text-white me-3" href="#">Instagram</a>
+        <a class="text-white" href="#">X</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS propio -->
+  <script src="script.js"></script>
+</body>
+</html>
